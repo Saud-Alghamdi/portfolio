@@ -11,14 +11,15 @@ const ProjectsGrid = () => {
         <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">Projects portfolio</p>
       </div>
 
-		{/* Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 sm:gap-10">
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 sm:gap-10">
         {selectProject
           ? selectProjectsByCategory.map((project) => (
               <ProjectSingle
                 title={project.title}
-                category={project.category}
                 image={project.img}
+                desc={project.desc}
+                techStack={project.techStack}
                 key={project.id}
               />
             ))
@@ -26,16 +27,18 @@ const ProjectsGrid = () => {
           ? searchProjectsByTitle.map((project) => (
               <ProjectSingle
                 title={project.title}
-                category={project.category}
                 image={project.img}
+                desc={project.desc}
+                techStack={project.techStack}
                 key={project.id}
               />
             ))
           : projects.map((project) => (
               <ProjectSingle
                 title={project.title}
-                category={project.category}
                 image={project.img}
+                desc={project.desc}
+                techStack={project.techStack}
                 key={project.id}
               />
             ))}
