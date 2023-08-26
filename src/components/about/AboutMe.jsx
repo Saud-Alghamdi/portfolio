@@ -17,7 +17,7 @@ export default function About() {
       <div className="text-center">
         <h3 className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light ">About Me:</h3>
         <p
-          className="r mt-10 text-md md:text-xl"
+          className="r mt-10 text-md md:text-xl  text-ternary-dark dark:text-ternary-light "
           style={{ lineHeight: "2.5" }}
         >
           I'm a Full Stack Web Developer, with proficiency in:
