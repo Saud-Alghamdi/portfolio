@@ -1,6 +1,6 @@
-import WebImage2 from "../images/web-project-2.jpg";
-import MobileImage2 from "../images/mobile-project-2.jpg";
-import UIImage1 from "../images/ui-project-1.jpg";
+import myClubsSnapshot from "../images/myclubs-screenshot-mobile_iphone13blue_portrait.png";
+import seuStudentsSnapshot from "../images/seu-students-screenshot-mobile_iphone13blue_portrait.png";
+import randomNumberSnapshot from "../images/random-number-screenshot-mobile_iphone13blue_portrait.png";
 
 export const projectsData = [
   {
@@ -9,7 +9,8 @@ export const projectsData = [
     category: "Web Application",
     desc: "a football platform where you can follow your favorite clubs",
     techStack: "React, TypeScript, Firebase, Tailwind",
-    img: WebImage2,
+    url: "https://myclubs.lol",
+    img: myClubsSnapshot,
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ export const projectsData = [
     category: "Web Application",
     desc: "a platform for students of Saudi Electronic University to excel their education journey",
     techStack: "JavaScript, Node.js, Bootstrap",
-    img: MobileImage2,
+    url: "https://seu-students.com",
+    img: seuStudentsSnapshot,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projectsData = [
     category: "Web Application",
     desc: "a web application that generates code that returns a random number",
     techStack: "JavaScript, Node.js, Bootstrap",
-    img: UIImage1,
+    url: "https://random-number-generator.site",
+    img: randomNumberSnapshot,
   },
 ];

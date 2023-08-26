@@ -6,7 +6,7 @@ const ProjectsGrid = () => {
   const { projects, searchProject, searchProjectsByTitle, selectProject, selectProjectsByCategory } = useContext(ProjectsContext);
 
   return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10">
+    <section className="py-5 sm:py-10 mt-5 sm:mt-10 " id="projects">
       <div className="text-center">
         <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">Projects portfolio</p>
       </div>
@@ -21,6 +21,7 @@ const ProjectsGrid = () => {
                 desc={project.desc}
                 techStack={project.techStack}
                 key={project.id}
+                url={project.url}
               />
             ))
           : searchProject
@@ -31,6 +32,7 @@ const ProjectsGrid = () => {
                 desc={project.desc}
                 techStack={project.techStack}
                 key={project.id}
+                url={project.url}
               />
             ))
           : projects.map((project) => (
@@ -40,6 +42,7 @@ const ProjectsGrid = () => {
                 desc={project.desc}
                 techStack={project.techStack}
                 key={project.id}
+                url={project.url}
               />
             ))}
       </div>
